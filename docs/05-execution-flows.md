@@ -7,10 +7,7 @@
 
 ## 5.1 Action Submission Sequence
 
-![Sequence Diagram](../diagrams/SequenceDiagram.png)
 
-<details>
-<summary>🔧 View Mermaid Source (for editing)</summary>
 
 ```mermaid
 sequenceDiagram
@@ -68,7 +65,7 @@ sequenceDiagram
         end
     end
 ```
-</details>
+
 
 ## 5.2 Pseudocode: Action Handler
 
