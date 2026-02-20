@@ -30,11 +30,6 @@ This specification defines a backend system for a live-updating scoreboard displ
 
 ### Architecture Overview
 
-![Architecture Diagram](diagrams/Architecture.png)
-
-<details>
-<summary>🔧 View Mermaid Source (for editing)</summary>
-
 ```mermaid
 graph TB
     subgraph "Client Layer"
@@ -64,7 +59,6 @@ graph TB
 
 
 ```
-</details>
 
 ## Core Technologies
 | Component  | Technology            | Justification                    |
