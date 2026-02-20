@@ -1,0 +1,32 @@
+### Submit Action (Success)
+POST https://api.example.com/api/v1/actions/submit
+Authorization: Bearer eyJhbGciOiJSUzI1NiIs...
+X-Request-ID: 550e8400-e29b-41d4-a716-446655440000
+X-Idempotency-Key: 6ba7b810-9dad-11d1-80b4-00c04fd430c8
+X-Action-Signature: a8f5f167f44f4964e6c998dee827110c9a0c5e1e7a5b6e5f9d8c7b6a5f4e3d2c
+X-Client-Timestamp: 2024-01-15T10:30:00.000Z
+Content-Type: application/json
+
+{
+  "action_type": "TASK_COMPLETE",
+  "action_id": "task_tutorial_001",
+  "metadata": {
+    "task_category": "onboarding",
+    "completion_time_ms": 12500
+  },
+  "client_timestamp": "2024-01-15T10:30:00.000Z"
+}
+
+### Submit Action (Duplicate - Test Idempotency)
+### Send same request twice, second should return 409
+
+### Get Leaderboard
+GET https://api.example.com/api/v1/leaderboard?limit=10&include_user=true
+Authorization: Bearer eyJhbGciOiJSUzI1NiIs...
+X-Request-ID: 550e8400-e29b-41d4-a716-446655440001
+
+### Health Check
+GET https://api.example.com/health/ready
+
+### Metrics (Prometheus format)
+GET https://api.example.com/health/metrics
