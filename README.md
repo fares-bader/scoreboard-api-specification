@@ -30,7 +30,7 @@ This specification defines a backend system for a live-updating scoreboard displ
 
 ### Architecture Overview
 
-![Architecture Diagram](diagrams/architecture.png)
+![Architecture Diagram](diagrams/Architecture.png)
 
 <details>
 <summary>🔧 View Mermaid Source (for editing)</summary>
